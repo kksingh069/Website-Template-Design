@@ -29,7 +29,7 @@
   .nav-link {
     position: relative;
     text-decoration: none;
-    color: #ffffff;
+    color: #ffffff !important;
     transition: color 0.3s;
   }
   
@@ -37,7 +37,7 @@
     
     font-size: 24px; 
     font-weight: bold; 
-    color: #ffffff; /* Example: sets text color to dark gray */
+    color: #ffffff !important; /* Example: sets text color to dark gray */
     /* Add any other styles as needed */
 }
 a img {
@@ -56,7 +56,7 @@ a img {
     transition: width 0.3s;
   }
   .nav-link:hover {
-    color: #d6d6d6;
+    color: #d6d6d6 !important;
   }
 
   .nav-link:hover::after {

@@ -374,7 +374,7 @@ h2.text-center.blog-heading, h2.text-center.d-shape-border {
   color: #353535;
 }
 .col-sm-12.col-lg-6.why-us-margin {
-  padding: 50px 0 0 30px;
+  padding: 50px -2px 0 30px;
 }
 .restaurant .image-frame {
   box-shadow: 3px 3px 38px 10px rgb(0 0 0 / 25%);
@@ -396,7 +396,6 @@ restaurant .image-frame img {
 }
 p.why-content {
   font-family: system-ui;
-  text-align: justify;
   font-size: 16px;
   line-height: 25px;
   margin-bottom: 10px;
@@ -597,4 +596,18 @@ color: white;
 .add-button:hover {
   background-color: #365899; /* Button background color on hover */
   color: white; /* Text color on hover */
+}
+@media (max-width: 768px) {
+  .w3l-call-to-action_9 .display-column {
+      height: auto; /* Adjust height as needed */
+      background-size: cover; /* Adjust background size */
+  }
+}
+
+/* Media query for screen width 468px and below */
+@media (max-width: 468px) {
+  .w3l-call-to-action_9 .display-column {
+      height: auto; /* Adjust height as needed */
+      background-size: cover; /* Adjust background size */
+  }
 }
