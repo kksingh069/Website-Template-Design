@@ -194,3 +194,59 @@ a img {
   line-height: 1.5;
   color: #fffafa;
 }
+
+.stick-whatsapp {
+  position: fixed;
+  right: 20px; 
+  bottom: 120px; 
+  z-index: 1000; 
+}
+
+.stick-whatsapp img {
+  width: 50px; 
+  height: auto;
+}
+@media (max-width: 768px) {
+  .stick-whatsapp img {
+    width: 40px; /* Adjust size for tablets */
+  }
+}
+
+@media (max-width: 468px) {
+  .stick-whatsapp img {
+    width: 30px; /* Adjust size for mobile phones */
+  }
+}
+
+
+@media (max-width: 768px) {
+  .funfact {
+    padding: 50px 0;
+  }
+  .happyfamily-block .customer-family h5 {
+    font-size: 28px;
+  }
+  .happyfamily-block .customer-family span {
+    font-size: 14px;
+  }
+  .customer-family img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 468px) {
+  .funfact {
+    padding: 30px 0;
+  }
+  .happyfamily-block .customer-family h5 {
+    font-size: 24px;
+  }
+  .happyfamily-block .customer-family span {
+    font-size: 12px;
+  }
+  .customer-family img {
+    width: 30px;
+    height: 30px;
+  }
+}
