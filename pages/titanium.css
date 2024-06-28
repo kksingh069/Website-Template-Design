@@ -104,3 +104,93 @@ a img {
     font-weight: 400;
     letter-spacing: 1px;
   }
+  .dwnld-section {
+    margin: 20px;
+}
+#pdf-container {
+    margin-top: 10px;
+}
+.my-vid {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 10px 10px;
+}
+.my-vid video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+/* CSS for the Download Button */
+.tita-form {
+  display: inline-block;
+  margin: 20px;
+}
+
+#titanium-pdf {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+  background-color: #30044c;
+  border: 2px solid transparent;
+  border-radius: 50px; /* Unique shape: rounded with a large radius */
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+#titanium-pdf:hover {
+  background-color: #0056b3;
+  transform: scale(1.1); /* Scale up on hover */
+}
+
+#titanium-pdf::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background-color: rgba(255, 255, 255, 0.1); /* Overlay effect */
+  border-radius: 50%;
+  transition: all 0.8s ease;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+#titanium-pdf:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+#titanium-pdf:active::before {
+  background-color: rgba(255, 255, 255, 0.3); /* Overlay color on click */
+}
+
+#titanium-pdf span {
+  position: relative;
+  z-index: 1;
+}
+
+#titanium-pdf::after {
+  content: '\2605'; /* Star symbol */
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 24px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+#titanium-pdf:hover::after {
+  opacity: 1;
+  transform: rotate(180deg) scale(1.2); /* Star rotates and scales on hover */
+}
+.brochure-content {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fffafa;
+}

@@ -55,4 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
       });
   });
 });
-const play=document.getElementById('asas')
+const play=document.getElementById('asas');
+
+let uploadedPdfUrl = '';
+
